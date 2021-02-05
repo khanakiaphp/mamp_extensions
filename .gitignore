@@ -1,0 +1,62 @@
+wordfence-waf.php
+.user.ini
+# ignore all files starting with . or ~
+##.*
+~*
+git
+
+# ignore node dependency directories (used by grunt)
+node_modules/
+bower_components/
+# compiled/
+.sass-cache/
+
+# ignore OS generated files
+.DS_Store
+ehthumbs.db
+Thumbs.db
+*.idea
+*.TMP
+*.tmp
+.tmb
+.quarantine
+
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore server created files
+error_log
+/tmp/
+/logs/
+/log/
+/cli/
+/cgi-bin/
+/.well-known/
+
+# ignore custom directories
+/ajaxplorer/
+/Codiad/
+/codiad/
+/ignore/
+/qa/
+/tool/
+
+#php
+*.user.ini
+php.ini
