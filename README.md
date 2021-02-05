@@ -3,6 +3,7 @@
 ## Extensions compiled
 * php7.3.9 - pcntl.so
 * php7.4.2 - pcntl.so
+* php7.4.2 - mongodb.so
 
 ### INSTALL PCNTL (INTL) EXTENSION =====================
 * download php from http://www.php.net/releases/
