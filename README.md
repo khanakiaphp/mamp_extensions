@@ -7,21 +7,21 @@ Are you having issues while compiling extension for MAMP of OSX so here you can 
 * php7.4.2 - mongodb.so
 
 ## How to Install compiled extension
-1. Create phpinfo.php file <?php phpinfo(); ?> in your localhost and run http://localhost/phpinfo.php
+1. Create `phpinfo.php` file and paste this code `<?php phpinfo(); ?>` in your localhost and run http://localhost/phpinfo.php
 2. Check your php.ini file path from the above url
-3. Open the php.in file and your extensio like this `extension=pcntl.so`
+3. Open the php.in file and past this code `extension=pcntl.so` to the bottom of the file to enable the extension
 4. Restart your server
-5. Refersh http://localhost/phpinfo.php and your extension should visible now.
+5. Refersh http://localhost/phpinfo.php and your extension should be visible now.
 
 ### INSTALL PCNTL (INTL) EXTENSION
 * download php from http://www.php.net/releases/
-* tar -xzvf php-7.2.1.tar.gz
-* cd php-7.2.1/ext/pcntl
-* /Applications/MAMP/bin/php/php7.2.1/bin/phpize
-* ./configure --prefix=/Applications/MAMP/bin/php/php7.2.1/bin/php
+* tar -xzvf php-7.4.2.tar.gz
+* cd php-7.4.2/ext/pcntl
+* /Applications/MAMP/bin/php/php7.4.2/bin/phpize
+* ./configure --prefix=/Applications/MAMP/bin/php/php7.4.2/bin/php
 * make && make install
-* Then the terminal will shows `Installing shared extensions: /Applications/MAMP/bin/php/php7.2.1/lib/php/extensions/no-debug-non-zts-20170718/`
-* Open MAMP PRO menu->File ->Edit Template->PHP->7.2.1 add below line at the end of the php.ini file `extension=pcntl.so`
+* Then the terminal will shows `Installing shared extensions: /Applications/MAMP/bin/php/php7.4.2/lib/php/extensions/no-debug-non-zts-20170718/`
+* Open MAMP PRO menu->File ->Edit Template->PHP->7.4.2 add below line at the end of the php.ini file `extension=pcntl.so`
 * Run the command `php --ri pcntl`
  and it will show message `pcntl support => enabled`
 
@@ -34,9 +34,8 @@ Most of the times MAMP Pro set same php version in the command line does not wor
 
 ## Change PHHP command line to load the same config as MAMP PRO
 Mamp uses different php config files for cli and mamp pro.
-NOTE: This is not required anymore for new MAMP Versions
 ```
-ln -s "/Library/Application Support/appsolute/MAMP PRO/conf/php7.3.8.ini" "/Applications/MAMP/bin/php/php7.3.8/conf/php.ini"
+ln -s "/Library/Application Support/appsolute/MAMP PRO/conf/php7.4.2.ini" "/Applications/MAMP/bin/php/php7.4.2/conf/php.ini"
 ```
 
 ## CHECK LOADED CONFIGURATION
