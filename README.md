@@ -1,5 +1,5 @@
 ## MAMP - Precompiled Extensions for OSX
-Are you having issues while compiling extension for MAMP of OSX so here you can find some precompiled extensions so you do not have compile and juggling with lots of compilation errors.
+Are you having issues with compiling php extension for MAMP in OSX so here you can find some precompiled extensions so you do not have to compile and juggling with lots of compilation errors.
 
 ## Extensions compiled
 * php7.3.9 - pcntl.so
